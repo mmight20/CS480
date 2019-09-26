@@ -4,8 +4,12 @@ using System.Text;
 
 namespace quotable.core
 {
+    /// Implements the RandomQuoteProveider interface
+    /// contains a method that returns a list of quotes based on the number of quotes that are requested
     public class SimpleRandomQuoteProvider : RandomQuoteProvider
     {
+        /// This method accepts a long that represents the number of quotes the user wants
+        /// It will retun a list of quotes
         public IEnumerable<string> getQuotes(long numOfQuotes)
         {
             List<string> myQuotes = new List<string>();
